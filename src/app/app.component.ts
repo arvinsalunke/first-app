@@ -6,5 +6,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Create server';
+  servers = [];
+  newServerName: string = "";
+  newServerDescription: string = "";
+
+  onAddServer() {
+    this.servers.push({
+      type: 'server',
+      name: this.newServerName,
+      description: this.newServerDescription
+    });
+  }
+  onAddBlueprint() {
+    this.servers.push({
+      type: 'blueprint',
+      name: this.newServerName,
+      description: this.newServerDescription
+    });
+  }
 }
