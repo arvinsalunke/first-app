@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col-md-5">
+    <div class="card mb-3 shadow-sm">
+      <div class="card-header">
+        <p class="mb-0 text-danger" *ngIf="element.type=='server'"><strong>{{ element.name }}</strong></p>
+        <p class="mb-0 text-primary" *ngIf="element.type=='blueprint'"><strong>{{ element.name }}</strong></p>
+      </div>
+      <div class="card-body">
+        <!-- <h5 class="card-title">Special title treatment</h5> -->
+        <p class="card-text">{{ element.description }}</p>
+        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+      </div>
+    </div>
+  </div>
+</div>
